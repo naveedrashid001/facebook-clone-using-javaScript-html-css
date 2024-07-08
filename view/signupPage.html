@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Signup</title>
+    <!-- connect css fie which is save in assets -->
+    <link rel="stylesheet" href="../assets/style/signupPage.css">
+</head>
+
+<body>
+    <div class="background">
+        <div class="content">
+            <div class="form-container">
+                <div id="realy">
+                    <h2 id="signupHeading">Sign Up</h2> <a id="signupButton">X</a>
+
+                </div>
+
+                <form id="signup-form">
+
+                    <input type="text" class="inline" name="fname" placeholder="First Name" required>
+                    <input type="text" class="inline" name="lname" placeholder="Last Name" required><br>
+                    <input type="email" placeholder="Email" name="email" required><br>
+                    <input type="password" placeholder="Password" name="password" required><br>
+                    <div class="dob-gender">
+                        <div class="dob">
+                            <label for="dob">Date of Birth</label>
+                            <select id="dob-day" name="dob" required></select>
+                            <select id="dob-month" required>
+                                <option value="">Month</option>
+                            </select>
+                            <select id="dob-year" required></select>
+                        </div>
+                        <div class="gender">
+                            <label><input type="radio" name="gender" value="female" required> Female</label>
+                            <!-- required -->
+                            <label><input type="radio" name="gender" value="male" required> Male</label>
+                            <label><input type="radio" name="gender" value="custom" required> Custom</label>
+
+                        </div>
+                    </div>
+                    <div class="terms">
+                        <p class="p-1">People who use our service may have uploaded your contact information to
+                            Facebook. <a href="#">Learn more</a>.</p>
+                        <p class="p-1">By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Privacy
+                                Policy</a> and <a href="#">Cookies Policy</a>. You may receive SMS notifications from us
+                            and can opt out at any time.</p>
+                    </div>
+
+                    <input type="submit" value="Sign Up">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/javascript/signupPage.js"></script>
+
+</body>
+
+</html>

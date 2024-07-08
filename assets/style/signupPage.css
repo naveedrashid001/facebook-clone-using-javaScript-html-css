@@ -1,0 +1,172 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Helvetica Neue', 'San Francisco', Arial, sans-serif;
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.codingnepalweb.com/wp-content/uploads/2023/06/How-to-Create-Facebook-Login-Page-in-HTML-and-CSS.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity */
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+    text-align: center;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    text-align: left;
+    position: relative;
+}
+
+.form-container h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.form-container h2 .close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1em;
+    cursor: pointer;
+    color: #999;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-container input[type="text"].inline {
+    width: 48%;
+    display: inline-block;
+}
+
+.form-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #1877f2;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #145dbf;
+}
+
+.form-container a {
+    color: #1877f2;
+    text-decoration: none;
+}
+
+.form-container .dob-gender {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container .dob-gender select,
+.form-container .dob-gender input[type="radio"] {
+    width: auto;
+    margin: 10px 0;
+}
+
+.form-container .dob-gender label {
+    margin-right: 10px;
+}
+
+.dob {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.dob select {
+    width: 30%;
+}
+
+.form-container .gender {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+
+.form-container .terms {
+    color: black;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+.form-container .terms a {
+    color: #1877f2;
+}
+.p-1{
+    font-size:small;
+}
+#realy {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%; /* Adjust width as needed */
+margin: 0 auto; /* Center align */
+}
+
+#signupButton {
+/* background-color: #1877f2; */
+color: white;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+color: black;
+font-weight: bolder;
+cursor: pointer;
+font-size: 1em;
+}
+
+#signupHeading {
+color: black; /* Adjust as needed */
+font-size: 1.5em;
+}

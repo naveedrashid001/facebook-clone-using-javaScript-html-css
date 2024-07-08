@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Page</title>
+    <script src="user.js"></script>
+</head>
+<body>
+    <h1>Welcome, <span id="display-name"></span>!</h1>
+    <p>Email: <span id="display-email"></span></p>
+    <p>Date of Birth: <span id="display-dob"></span></p>
+    <p>Gender: <span id="display-gender"></span></p>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const formData = JSON.parse(localStorage.getItem('formData'));
+
+    if (formData) {
+        document.getElementById('display-name').textContent = `${formData.fname} ${formData.lname}`;
+        document.getElementById('display-email').textContent = formData.email;
+        document.getElementById('display-dob').textContent = `${formData.dobDay}/${formData.dobMonth}/${formData.dobYear}`;
+        document.getElementById('display-gender').textContent = formData.gender;
+    }
+});
+
+    </script>
+</body>
+</html>
