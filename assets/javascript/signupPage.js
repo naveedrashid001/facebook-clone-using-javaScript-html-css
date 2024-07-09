@@ -47,3 +47,9 @@ window.onload = function () {
         window.location.href = '../view/mainLayout.html';
     });
 });
+
+const closeButton = document.getElementById("closeButton");
+
+closeButton.addEventListener("click", function(){
+    window.location.href="../index.html"
+})

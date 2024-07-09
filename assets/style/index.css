@@ -95,3 +95,8 @@ margin-bottom: 5px;
 .form-box .create-btn a:hover {
 background: #42b72a;
 }
+#forgetenPassword{
+    text-decoration: underline;
+    color: #166fe5;
+    cursor: pointer;
+}

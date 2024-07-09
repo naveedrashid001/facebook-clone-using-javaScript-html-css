@@ -240,7 +240,12 @@ nav .right img{
     object-fit: cover;
     object-position: center;
 }
-
+.main .center .top_box .my_story_card video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 .main .center .top_box .my_story_card .story_upload{
     width: 100%;
     height: 60px;

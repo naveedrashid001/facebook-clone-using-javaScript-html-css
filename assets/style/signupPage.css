@@ -170,3 +170,9 @@ font-size: 1em;
 color: black; /* Adjust as needed */
 font-size: 1.5em;
 }
+
+#closeButton{
+    text-decoration:none ;
+    color: black;
+    cursor:default;
+}
