@@ -837,6 +837,22 @@ nav .right img{
     text-decoration: none;
     color: black;
 }
-
-
+.postRestriction{
+    cursor: pointer;
+    
+}
+.contact p{
+    cursor: pointer;
+    
+}
+.somethingwrong
+{
+    cursor: pointer;
+    
+}
+.friendprofile
+{
+    cursor: pointer;
+    
+}
    

@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your friend</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="../assets/css/profile.css"> -->
+
+    <link rel="stylesheet" href="../assets/style/friendProfile.css">
+    
+    <style>
+        ul li{
+            cursor: pointer;
+        }
+    </style>
+<!-- head section start -->
+  </head>
+  <body>
+    <div class="header__wrapper">
+      <header>
+
+      </header>
+      <div class="cols__container">
+        <div class="left__col">
+          <div class="img__container">
+            <a class="somethingwrong">
+            <img src="https://static.vecteezy.com/system/resources/previews/036/280/650/original/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-illustration-vector.jpg" alt="your friend">
+        </a>
+            <span></span>
+          </div>
+          <h2>loading...</h2>
+          <p>Email: loading...</p>
+          <p>...</p>
+
+
+
+          <ul class="about">
+            <li><span>...</span>Followers</li>
+            <li><span>...</span>Following</li>
+            <li><span>...</span>Attraction</li>
+          </ul>
+
+          <div class="content">
+            <p>
+              ....</p>
+
+            <ul>
+              <li><i class="fab fa-twitter"></i></li>
+              <i class="fab fa-pinterest"></i>
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-dribbble"></i>
+            </ul>
+          </div>
+        </div>
+        <div class="right__col">
+          <nav>
+            <ul>
+                <li><a class="somethingwrong"> photos</a></li>
+              <li><a class="somethingwrong">galleries</a></li>
+              <li><a class="somethingwrong">groups</a></li>
+              <li><a class="somethingwrong">about</a></li>
+            </ul>
+            <a class="somethingwrong"><button>Follow</button></a>
+          </nav>
+
+          <div class="photos">
+            <img src="https://img.freepik.com/free-vector/silver-blurred-background_1034-253.jpg?size=338&ext=jpg&ga=GA1.1.2113030492.1720224000&semt=ais_user" alt="Photo" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7LCP4BtyCrwH01ARQDdP6NMYORj7vjmQ9ZPS1nSXewQzs-X-V9eYdz2qThTs0NR-4jys&usqp=CAU" alt="Photo" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ_wdJh8m_kIQqdddACtzMnHDfel1HUDOuJTpee155k8zTfVrv07c48WTnGcpdxkZ-wrk&usqp=CAU" alt="Photo" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaV6GTgsHZw4Wjib67lQjVOU6YePbpzG5j-9KxGGik940glMhxBglbPsvmXg1sPr9m8v8&usqp=CAU" alt="Photo" />
+            <img src="https://www.befunky.com/images/prismic/391d50e3-1268-45e1-aaaa-3cfe6f2fb90d_hero-blur-image-2.jpg?auto=avif,webp&format=jpg&width=896" alt="Photo" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlfF1Qe2AW90mUyEUcT6bWVGMHeI39RzAHF1vuX4FuTeIOfEDpiW3WS0SvZoEdJBuBjn0&usqp=CAU" alt="Photo" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+const formData = JSON.parse(localStorage.getItem('formData'));
+
+if (formData) {
+    document.getElementById('display-name').textContent = `${formData.fname} ${formData.lname}`;
+    document.getElementById('display-email').textContent = formData.email;
+}
+});
+
+</script>
+
+<!-- add no internet page script -->
+ <script src="../assets/javascript/nointernet.js"></script>
+</html>
