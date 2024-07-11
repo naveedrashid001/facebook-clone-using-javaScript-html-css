@@ -42,9 +42,13 @@ games.addEventListener("click", function(event){
     window.location.href = "../leftSide/games.html";
 })
 
+// log out 
 const closeButton = document.getElementById("closeButton");
-
+// const form= document.getElementById("form")
+// const inputemail form.email;
+// const inputpassword =form.password;
 closeButton.addEventListener("click", function(){
+    
     window.location.href="../index.html"
 })
  
