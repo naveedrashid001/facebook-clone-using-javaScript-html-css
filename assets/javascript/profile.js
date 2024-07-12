@@ -7,3 +7,10 @@ somethingWrongLinks.forEach(link => {
     window.location.href="../view/profile.html";
 });
 });
+
+const messagenger = document.getElementById("messagenger")
+
+messagenger.addEventListener("click", function(event){
+    event.preventDefault();
+    window.location.href="./messenger.html";
+})

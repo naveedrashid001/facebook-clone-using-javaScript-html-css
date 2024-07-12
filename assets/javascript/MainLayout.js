@@ -8,6 +8,12 @@ const profile2 = document.getElementById("profile2")
 
 profile2.addEventListener("click", function(){
     window.location.href="../view/profile.html";
+}) 
+
+const profile3 = document.getElementById("profile-3")
+
+profile3.addEventListener("click", function(){
+    window.location.href="../view/profile.html";
 })
 
 const friend = document.getElementById("friend");
@@ -63,4 +69,6 @@ somethingWrongLinks.forEach(link => {
         // Navigate to the same page for all elements with class "somethingwrong"
         window.location.href = "../leftSide/serverBusy.html";
     });
-});
+}); 
+
+
